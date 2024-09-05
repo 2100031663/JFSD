@@ -1,0 +1,19 @@
+/* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-image-container {
+    /* Set the desired image as the background */
+    background-image: url('./images/bg3.png');
+    /* Define how the image should be displayed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Center the image vertically and horizontally */
+    background-position: center center;
+    /* Set the height of the container to cover the viewport */
+    height: 100%;
+}

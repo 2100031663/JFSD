@@ -1,0 +1,253 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav:hover {
+    background-color: #555;
+}
+
+.logo h1 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.4s, border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.menu ul li a:hover {
+    color: #ff6f61;
+    border-bottom: 2px solid #ff6f61;
+}
+
+.auctions {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.filter {
+    display: flex;
+    margin-bottom: 0; /* Remove the external margin */
+}
+
+.filter input[type="text"] {
+    padding: 10px;
+    margin-bottom: 0%;
+    width: 300px;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+    margin-right: 20px;
+    border: 5px solid #161515;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.filter select {
+    margin-bottom: 0;
+    padding: 10px;
+    margin-right: 0%; /* Remove the right margin */
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+
+.sort select {
+    padding: 10px;
+    margin-right: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+.items {
+    margin-top: 0; /* Adjusted the top margin to move images up */
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px; /* Adjusted the margin to create spacing between items */
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.bid-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bid-button:hover {
+    background-color: #ff503d;
+}
+
+/* Your existing CSS styles remain the same */
+
+/* Define the styles for the product status labels */
+.auctions {
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-top: 1%;
+    bottom: 10%;
+    border-bottom-width: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.auction {
+    width: 300px;
+    border: 4px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    bottom: 0%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.auction img {
+    max-width: 100%;
+    margin-top: 0%;
+    padding-top: 0%;
+    bottom: 10%;
+    height: auto;
+}
+
+.bid-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bid-button:hover {
+    background-color: #ff503d;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.available {
+    background-color: #5CB85C; /* Green for "Available" status */
+    color: white;
+}
+
+.sold-out {
+    background-color: #D9534F; /* Red for "Sold Out" status */
+    color: white;
+}
+
+.status-filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.status {
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; /* Adjust the width as needed */
+}
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-container img {
+    max-width: 10%;
+    height: 10%;
+    margin-top: 10px; /* Adjusted the margin */
+    padding-top: 0; /* Removed unnecessary padding */
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+/* Your existing CSS styles */
+
+body {
+    background-image: url(./images/bg.jpg); /* Replace 'your-image.jpg' with the actual image file name */
+    background-size: cover; /* Adjust to 'cover' or 'contain' based on your preference */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: To fix the background image */
+}
